@@ -361,11 +361,11 @@ html {
     z-index: 100;
     top: 0;
     right: 0;
-    background:linear-gradient(to left, #016, #027, #03c, #027, #016);
-    background-size: 115% 50%;
+    background:url(SlideOut.jpeg);
+    background-size: 100% 100%;
     overflow-x: hidden;
     transition: .8s;
-    font-family: 'Philosopher';
+    font-family: 'Federant';
     font-weight: bold;
 }
 
