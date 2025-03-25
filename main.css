@@ -238,15 +238,6 @@ html {
     text-shadow: 1px 1px 0px #f00, -1px 1px 0px #f00,  -1px -1px 0px #f00,  1px -1px 0px #f00;
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -99999999999;
-}
-
 .arrow{
     position: absolute;
     top: 97%;
@@ -1054,7 +1045,7 @@ textarea {
 }
 
 .cform{
-    margin: 40px auto 0px;
+    margin: 40px auto 150px;
     width: 60%;
     text-align: center;
     color: white;
@@ -1431,11 +1422,13 @@ h6{
 }
 
 #footer {
+    background: #016;
     position: relative;
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto -20px;
     bottom: 0;
     z-index: -1;
+    padding: 20px;
 }
 
 #footer img {
@@ -1447,7 +1440,7 @@ h6{
     color: #0bb;
     font-family: 'Quintessential';
     font-size: 24px;
-    margin: 100px 0 0;
+    margin: 10px 0 0;
     filter: drop-shadow(2px 2px 1px #000);
 }
 
@@ -1976,7 +1969,7 @@ h6{
     }
     
     .cform{
-        margin-bottom: -50px;
+        margin-bottom: 250px;
     }
 
     
@@ -2093,6 +2086,14 @@ h6{
         width: 110px;
         height: 110px;
     }
+    
+    #EllaVideo{
+        margin-bottom: 150px;
+    }
+    
+    #obit{
+        margin-bottom: 150px;
+    }
 
 }
 
@@ -2142,7 +2143,7 @@ h6{
     }
 
     #obit img{
-        margin-top: 125px;
+        margin: 125px auto; 
     }
     
     .banner{
@@ -2154,6 +2155,10 @@ h6{
         width: 50%;
         height: 100px;
         margin: auto;
+    }
+    
+    #cbanner{
+        margin-bottom: -50px;
     }
     
     #partnership h1{
@@ -2732,8 +2737,7 @@ h6{
     
     .cform{
         width: 85%;
-        margin: 100px auto 0px;
-        margin-bottom: -50px;
+        margin: 100px auto 150px;
     }
     
     .cform textarea, .cform input[type=text]{
@@ -2853,6 +2857,10 @@ h6{
     
     .logos h2{
         font-size: 18px;
+    }
+    
+    #EllaVideo{
+        margin-bottom: 150px;
     }
     
     .social{
@@ -3036,6 +3044,10 @@ h6{
         margin-left: 30px;
     }
     
+    .cform{
+        margin-bottom: 300px;
+    }
+    
     .cform input[type=submit]{
         margin: 50px auto;
         width: 25%;
@@ -3084,6 +3096,14 @@ h6{
     
     .logos a{
         margin: 10px 2%;
+    }
+    
+    #EllaVideo{
+        margin-bottom: 150px;
+    }
+    
+    #obit{
+        margin-bottom: 150px;
     }
 }
 
@@ -3305,7 +3325,15 @@ h6{
     }
     
     .cform{
-        margin-bottom: -50px;
+        margin-bottom: -450px;
+    }
+    
+    #obit{
+        margin-bottom: 150px;
+    }
+    
+    #EllaVideo{
+        margin-bottom: 150px;
     }
     
     #footer{
