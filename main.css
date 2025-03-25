@@ -1746,6 +1746,23 @@ h6{
 
 @media (min-width: 601px) and (max-width: 800px){
     
+    #obitm{
+        display: none;
+    }
+    
+    #obitdown{
+        color: #fff;
+        font-family: 'Electrolize';
+        font-size: 22px;
+        margin: -100px auto 150px;
+        text-align: center;
+        background: linear-gradient(to top, #800, orangered, #f57e42, orangered, #800);
+        width: 140px;
+        border-radius: 50px;
+        border: 1px solid red;
+        padding: 5px;
+    }
+    
     #fname{
         margin: 70px 0  10px;
     }
@@ -2101,6 +2118,23 @@ h6{
 
 @media (max-width: 1000px) and (min-width: 801px){
     
+    #obitdown{
+        color: #fff;
+        font-family: 'Electrolize';
+        font-size: 22px;
+        margin: -100px auto 200px;
+        text-align: center;
+        background: linear-gradient(to top, #800, orangered, #f57e42, orangered, #800);
+        width: 140px;
+        border-radius: 50px;
+        border: 1px solid red;
+        padding: 5px;
+    }
+    
+    .obitm{
+        display: none;
+    }
+    
     .logos img{
         width: 170px;
     }
@@ -2119,6 +2153,33 @@ h6{
 
 
 @media (max-width: 600px) {
+    
+    #obit{
+        display: none;
+    }
+    
+    #obitm{
+        margin: 150px 15px;
+        font-family: 'federant';
+        line-height: 1.75;
+        color: #fff;
+        background: #016;
+        padding: 30px 20px;
+        border: 5px double gold;
+        border-radius: 15px;
+    }
+    
+    #obitdown{
+        font-family: 'Electrolize';
+        font-size: 20px;
+        margin: 20px auto;
+        text-decoration: none;
+        text-align: center;
+        background: linear-gradient(to top, #800, orangered, #f57e42, orangered, #800);
+        width: 135px;
+        border-radius: 50px;
+        border: 1px solid red;
+    }
     
     .social{
         display:none;
@@ -2906,6 +2967,23 @@ h6{
 
 @media (min-width: 801px) and (max-width: 1000px){
     
+    #obitm{
+        display: none;
+    }
+    
+    #obitdown{
+        color: #fff;
+        font-family: 'Electrolize';
+        font-size: 22px;
+        margin: -100px auto 200px;
+        text-align: center;
+        background: linear-gradient(to top, #800, orangered, #f57e42, orangered, #800);
+        width: 140px;
+        border-radius: 50px;
+        border: 1px solid red;
+        padding: 5px;
+    }
+    
     #partnership h1{
         font-size: 23px;
     }
@@ -3204,8 +3282,22 @@ h6{
 @media (min-width: 1001px) {
     .burger,
     .mconsult,
-    .mobile{
+    .mobile,
+    #obitm{
         display: none;
+    }
+    
+    #obitdown{
+        color: #fff;
+        font-family: 'Electrolize';
+        font-size: 22px;
+        margin: -100px auto 200px;
+        text-align: center;
+        background: linear-gradient(to top, #800, orangered, #f57e42, orangered, #800);
+        width: 140px;
+        border-radius: 50px;
+        border: 1px solid red;
+        padding: 5px;
     }
     
     #fname{
