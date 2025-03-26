@@ -283,6 +283,7 @@ html {
     transform: rotate(45deg);
     margin: -15px;
     animation: animate 7.5s infinite;
+    z-index: 9999999999999999;
 }
 .arrow span:nth-child(2), .arrows span:nth-child(2){
     animation-delay: -0.2s;
@@ -2453,7 +2454,7 @@ h6{
     
     
     .burger {
-        margin-top: 35px;
+        margin-top: 32px;
         margin-right: 10px;
     }
     
@@ -2481,9 +2482,9 @@ h6{
     }
     
     .logo img{
-        margin-top: 18px;
-        margin-left: 10px;
-        height: 60px; 
+        margin-top: 22px;
+        margin-left: -10px;
+        height: 50px; 
         width: 130px;
         filter: drop-shadow(2px 3px 1px #000);
     }
@@ -2644,7 +2645,7 @@ h6{
         width: 300px;
         font-size: 17px;
         padding: 8px;
-        margin-top: -16px;
+        margin-top: -20px;
         border-radius: 20px;
     }
     
