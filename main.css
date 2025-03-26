@@ -2186,14 +2186,15 @@ h6{
     }
     
     #obitm{
-        margin: 150px 15px;
+        margin: 70px 10px 100px;
         font-family: 'federant';
         line-height: 1.75;
         color: #fff;
         background: #016;
-        padding: 30px 20px;
+        padding: 20px 15px;
         border: 5px double gold;
         border-radius: 15px;
+        font-size: 22px;
     }
     
     #obitdown{
