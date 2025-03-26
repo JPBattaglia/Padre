@@ -44,13 +44,13 @@ html {
     margin: auto;
 }
 
-#obitdown{
+#obitdown, #obitdownm{
     cursor: pointer;
     box-shadow: 4px 8px 10px black;
     transition: .3s;
 }
 
-#obitdown:hover{
+#obitdown:hover, #obitdownm:hover{
     box-shadow: 2px 4px 15px black;
     color: yellow;
     transition: .3s;
@@ -1777,7 +1777,7 @@ h6{
         display: none;
     }
     
-    #obitdown{
+    #obitdown, #obitdownm{
         color: #fff;
         font-family: 'Electrolize';
         font-size: 22px;
@@ -2181,12 +2181,12 @@ h6{
 
 @media (max-width: 600px) {
     
-    #obit{
+    #obit, #obitdownm{
         display: none;
     }
     
     #obitm{
-        margin: 70px 10px 100px;
+        margin: 120px 10px 100px;
         font-family: 'federant';
         line-height: 1.75;
         color: #fff;
@@ -3000,7 +3000,7 @@ h6{
         display: none;
     }
     
-    #obitdown{
+    #obitdown, #obitdownm{
         color: #fff;
         font-family: 'Electrolize';
         font-size: 22px;
@@ -3316,7 +3316,7 @@ h6{
         display: none;
     }
     
-    #obitdown{
+    #obitdown, #obitdownm{
         color: #fff;
         font-family: 'Electrolize';
         font-size: 22px;
