@@ -1721,8 +1721,32 @@ h6{
     
     .logos h2{
         font-size: 16px;
-    }  
+    } 
     
+    .gallery{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gallery a img{
+        width: 300px;
+        height: 350px;
+        margin: 50px;
+    }
+    
+    #battleship{
+        width: 100%;
+        margin: auto;
+    }
+    
+    #lenola{
+        width: 100%;
+        margin: 50px auto;
+    }
 }
 
 
@@ -2175,6 +2199,7 @@ h6{
     #ellas img{
         width: 145px;
     }
+    
 }
 
 
@@ -2216,19 +2241,19 @@ h6{
     }
     
     .gallery{
+        margin: auto;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
+        justify-content: center;
     }
     
     .gallery img{
-        width: 300px;
-        margin: 20px;
+        width: 100%;
+        margin: 50px auto;
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
-        flex: 1;
         border: 5px double gold;
         border-radius: 10px;
     }
@@ -3034,15 +3059,15 @@ h6{
         width: 100%;
     }
     
-    .gallery img{
-        width: 300px;
+    .gallery img {
+        width: 400px;
         margin: 50px;
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
         flex: 1;
         border: 5px double gold;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     
     .banner{
@@ -3361,11 +3386,16 @@ h6{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: center; 
+    }
+    
+    .gallery a{
+        margin: 50px;
     }
     
     .gallery img{
         width: 300px;
-        margin: 50px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
@@ -3374,18 +3404,32 @@ h6{
         border-radius: 10px;
     }
     
+    #battleship{
+        width: 100%;
+    }
+    
+    #lenola{
+        width: 100%;
+        margin: auto;
+    }
+    
+    
     .banner{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin: 250px 0 100px;
+        margin: 20px auto;
     }
     
     .banner img{
         width: 50%;
         height: 200px;
         margin: auto;
+    }
+    
+    .banner img:only-child{
+        margin: 250px 0 100px 0;
     }
     
     .arrow{
