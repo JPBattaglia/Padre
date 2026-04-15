@@ -1,221 +1,1180 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="IrD2UK93D4tY9VtDmDNBuhq5hsGYfWjObaQT89aQCls" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <meta property="og:title" content="Tony Battaglia Memorial Obituary WebSite" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="350" />
-    <meta property="og:image" content="https://i.ibb.co/Nd3K18gy/Thumb.png"/>
-    <meta property="og:image:secure_url" content="https://i.ibb.co/Nd3K18gy/Thumb.png" />
-    <meta name="keywords" content="Anthony Tony Paul Battaglia Memorial Obituary Navy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tony Battaglia - Gallery</title>
-    <meta name="description" content="Online Presence Management">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" type="image/png" href="Icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Federant|Philosopher|Electrolize|Kaushan+Script|Lexend|Righteous|Orbitron|Belleza|Amarante|Quintessential" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="IrD2UK93D4tY9VtDmDNBuhq5hsGYfWjObaQT89aQCls">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gallery page for the Anthony Paul Battaglia memorial website.">
+  <meta name="keywords" content="Anthony Tony Paul Battaglia Memorial Obituary Navy">
+  <meta property="og:title" content="Tony Battaglia Memorial Website - Gallery">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="400">
+  <meta property="og:image:height" content="350">
+  <meta property="og:image" content="https://i.ibb.co/Nd3K18gy/Thumb.png">
+  <meta property="og:image:secure_url" content="https://i.ibb.co/Nd3K18gy/Thumb.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tony Battaglia - Gallery</title>
+
+  <link rel="shortcut icon" type="image/png" href="Icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Federant&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#06111f;
+      --gold:#d6b25e;
+      --gold-soft:#f3dfab;
+      --ivory:#f3efe3;
+      --blue:#d7e4f7;
+      --line:rgba(214,178,94,.40);
+      --line-strong:rgba(214,178,94,.62);
+      --shadow:0 24px 64px rgba(0,0,0,.34);
+      --container:min(1220px, calc(100% - 32px));
+      --content:min(860px, calc(100% - 32px));
+      --radius-xl:32px;
+      --radius-lg:24px;
+      --desktop-nav-h:108px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%}
+    body{
+      font-family:"Philosopher", serif;
+      color:var(--ivory);
+      background:var(--bg);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-3;
+      background:
+        linear-gradient(180deg, rgba(2,7,18,.34), rgba(2,8,20,.78)),
+        url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDBkYWdsbjl2aGI1MHg5azY5MmRsZ2JqOHozaW9ueDhkYTZibTJhcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lFNmSjRDN9SiLJ3a9Z/giphy.gif") center/cover no-repeat;
+      transform:scale(1.03);
+    }
+
+    body::after{
+      content:"";
+      position:fixed;
+      inset:0;
+      z-index:-2;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 50% 12%, rgba(214,178,94,.10), transparent 26%),
+        linear-gradient(180deg, rgba(8,30,70,.16), rgba(3,10,24,.36) 45%, rgba(1,6,16,.74));
+    }
+
+    a{color:inherit}
+
+    .site-shell{
+      width:var(--container);
+      margin:0 auto;
+      padding:20px 0 32px;
+    }
+
+    .desktop-shell{
+      position:sticky;
+      top:16px;
+      z-index:1000;
+      width:100%;
+      min-height:var(--desktop-nav-h);
+      margin:0 0 28px;
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:linear-gradient(180deg, rgba(8,34,90,.94), rgba(4,12,33,.96));
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+      overflow:hidden;
+    }
+
+    .desktop-shell-inner{
+      min-height:var(--desktop-nav-h);
+      display:grid;
+      grid-template-columns:1fr auto 1fr;
+      align-items:center;
+      gap:24px;
+      padding:14px 18px;
+    }
+
+    .desktop-brand{
+      display:flex;
+      align-items:center;
+      justify-self:start;
+      gap:14px;
+      min-width:0;
+      text-decoration:none;
+    }
+
+    .brand-mark{
+      width:85px;
+      height:85px;
+      box-shadow:0 10px 20px rgba(0,0,0,.24);
+    }
+
+    .brand-mark img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .desktop-brand-copy{
+      min-width:0;
+    }
+
+    .desktop-eyebrow{
+      margin:0 0 4px;
+      font:11px/1 "Electrolize", sans-serif;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+      white-space:nowrap;
+    }
+
+    .desktop-title{
+      margin:0;
+      font:700 28px/1.02 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+      white-space:nowrap;
+    }
+
+    .desktop-subtitle{
+      margin:4px 0 0;
+      font:14px/1.15 "Federant", serif;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+      white-space:nowrap;
+    }
+
+    .desktop-center{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      justify-self:center;
+      min-width:200px;
+      pointer-events:none;
+    }
+
+    .desktop-center img{
+      width:200px;
+      height:auto;
+      display:block;
+      opacity:.96;
+      filter:drop-shadow(0 6px 10px rgba(0,0,0,.28));
+    }
+
+    .desktop-links{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      justify-self:end;
+      gap:12px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .desktop-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 18px;
+      border-radius:999px;
+      border:1px solid rgba(214,178,94,.42);
+      background:rgba(10,22,56,.55);
+      text-decoration:none;
+      color:var(--gold-soft);
+      font:15px/1 "Federant", serif;
+      letter-spacing:.04em;
+      text-shadow:1px 1px 0 #000;
+      box-shadow:0 10px 24px rgba(0,0,0,.18);
+      transition:.22s ease;
+      white-space:nowrap;
+    }
+
+    .desktop-links a:hover,
+    .desktop-links a:focus-visible{
+      outline:none;
+      transform:translateY(-1px);
+      background:rgba(72,58,10,.72);
+      color:#fff1c0;
+    }
+
+    .desktop-links a.active{
+      background:linear-gradient(180deg, rgba(46,34,8,.84), rgba(22,16,5,.74));
+      border-color:rgba(244,210,129,.88);
+      color:#f0c24a;
+    }
+
+    .mobile-header{
+      display:none;
+    }
+
+    .mobile-topbar{
+      display:grid;
+      grid-template-columns:1fr 42px;
+      align-items:start;
+      gap:10px;
+      margin-bottom:14px;
+    }
+
+    .mobile-toggle{
+      width:42px;
+      height:42px;
+      padding:0;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(12,34,88,.96), rgba(5,16,40,.98));
+      box-shadow:0 10px 22px rgba(0,0,0,.20);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      cursor:pointer;
+      justify-self:end;
+    }
+
+    .mobile-toggle span{
+      display:block;
+      width:18px;
+      height:2px;
+      margin:0;
+      border-radius:999px;
+      background:linear-gradient(to right, #8d6b2d, #d6b25e, #f3dfab, #d6b25e, #8d6b2d);
+      flex:0 0 2px;
+    }
+
+    .mobile-brand{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      text-decoration:none;
+    }
+
+    .mobile-brand .brand-mark{
+      width:145px;
+      height:86px;
+      flex-basis:172px;
+      border-radius:16px;
+      margin-bottom:10px;
+      margin-top: -15px;
+    }
+
+    .mobile-brand-copy{
+      max-width:100%;
+      padding:10px 14px;
+      border-radius:18px;
+      background:rgba(3,11,28,.56);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      box-shadow:0 10px 24px rgba(0,0,0,.18);
+    }
+
+    .mobile-brand-title{
+      margin:0;
+      font:700 21px/1.04 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000, 0 0 10px rgba(0,0,0,.42);
+    }
+
+    .mobile-brand-subtitle{
+      margin:5px 0 0;
+      font:10px/1.15 "Federant", serif;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000, 0 0 10px rgba(0,0,0,.42);
+    }
+
+    .mobile-menu{
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:1200;
+      background:rgba(2,8,22,.42);
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      padding:18px;
+    }
+
+    .mobile-menu.open{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .mobile-menu-panel{
+      width:min(360px, calc(100% - 32px));
+      margin:0 auto;
+      padding:18px;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:24px;
+      background:linear-gradient(180deg, rgba(8,36,96,.96), rgba(4,13,38,.98));
+      box-shadow:var(--shadow);
+    }
+
+    .mobile-menu-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      margin-bottom:18px;
+    }
+
+    .mobile-menu-brand-title{
+      margin:0;
+      font:700 18px/1.03 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .mobile-menu-brand-subtitle{
+      margin:4px 0 0;
+      font:10px/1.1 "Federant", serif;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .mobile-close{
+      width:40px;
+      height:40px;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(12,34,88,.96), rgba(5,16,40,.98));
+      color:var(--gold-soft);
+      font:20px/1 sans-serif;
+      cursor:pointer;
+    }
+
+    .mobile-menu-links{
+      display:grid;
+      gap:10px;
+    }
+
+    .mobile-menu-links a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:46px;
+      border-radius:16px;
+      border:1px solid rgba(214,178,94,.42);
+      background:rgba(10,22,56,.52);
+      text-decoration:none;
+      font:16px/1 "Federant", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .hero{
+      padding:34px 0 48px;
+    }
+
+    .hero-frame{
+      width:var(--content);
+      margin:0 auto;
+    }
+
+    .hero-card{
+      padding:48px 42px 42px;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:var(--radius-xl);
+      background:linear-gradient(180deg, rgba(6,38,108,.90), rgba(2,11,38,.94));
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .hero-kicker{
+      margin:0 0 16px;
+      font:13px/1 "Electrolize", sans-serif;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .hero-title{
+      margin:0;
+      font:700 clamp(50px, 6vw, 82px)/1.02 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:2px 2px 0 #000;
+    }
+
+    .hero-subtitle{
+      margin:16px 0 0;
+      font:clamp(21px, 2.3vw, 31px)/1.22 "Federant", serif;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .hero-dates{
+      margin:14px 0 0;
+      font:clamp(22px, 2vw, 29px)/1.2 "Philosopher", serif;
+      color:var(--gold);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .hero-rule{
+      width:140px;
+      height:1px;
+      margin:26px auto 24px;
+      background:linear-gradient(to right, transparent, rgba(214,178,94,.9), transparent);
+    }
+
+    .hero-summary{
+      margin:0 auto;
+      max-width:720px;
+      font:clamp(22px, 1.9vw, 30px)/1.72 "Philosopher", serif;
+      color:var(--ivory);
+      text-shadow:1px 1px 1px #000;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:16px;
+      margin-top:30px;
+    }
+
+    .hero-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:220px;
+      min-height:58px;
+      padding:0 26px;
+      border-radius:999px;
+      border:1px solid rgba(214,178,94,.74);
+      background:linear-gradient(180deg, rgba(8,61,186,.96), rgba(3,25,76,.97));
+      color:var(--gold-soft);
+      font:18px/1 "Federant", serif;
+      letter-spacing:.05em;
+      text-shadow:1px 1px 0 #000;
+      text-decoration:none;
+      box-shadow:0 10px 24px rgba(0,0,0,.28);
+      transition:.24s ease;
+    }
+
+    .hero-btn:hover,
+    .hero-btn:focus-visible{
+      outline:none;
+      transform:translateY(-2px);
+      color:#fff;
+      border-color:#f5df9d;
+      box-shadow:0 14px 28px rgba(0,0,0,.34);
+    }
+
+    .content-main{
+      width:var(--content);
+      margin:0 auto 120px;
+      display:grid;
+      gap:28px;
+    }
+
+    .content-section{
+      padding:16px;
+      border-radius:var(--radius-xl);
+      border:1px solid rgba(214,178,94,.34);
+      background:linear-gradient(180deg, rgba(5,35,96,.88), rgba(2,10,34,.93));
+      box-shadow:var(--shadow);
+    }
+
+    .content-panel{
+      display:grid;
+      grid-template-columns:320px minmax(0,1fr);
+      gap:32px;
+      align-items:center;
+      padding:20px;
+      border-radius:var(--radius-lg);
+      border:1px solid rgba(214,178,94,.45);
+      background:linear-gradient(180deg, rgba(4,28,89,.92), rgba(0,8,33,.96));
+    }
+
+    .content-panel.reverse{
+      grid-template-columns:minmax(0,1fr) 320px;
+    }
+
+    .content-panel.reverse .content-media{order:2}
+    .content-panel.reverse .content-copy{order:1}
+
+    .content-media img{
+      display:block;
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:22px;
+      border:4px double rgba(255,255,255,.42);
+      box-shadow:0 12px 28px rgba(0,0,0,.30);
+    }
+
+    .content-copy h2{
+      margin:0 0 14px;
+      font:clamp(31px, 3vw, 42px)/1.12 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .content-copy p{
+      margin:0;
+      font:clamp(21px, 1.7vw, 26px)/1.78 "Philosopher", serif;
+      color:var(--ivory);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .tribute{
+      padding:42px 36px;
+      border-radius:var(--radius-xl);
+      border:1px solid rgba(214,178,94,.34);
+      background:linear-gradient(180deg, rgba(4,28,89,.92), rgba(0,8,33,.96));
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .tribute h2{
+      margin:0 0 18px;
+      font:clamp(34px, 3.3vw, 46px)/1.08 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .tribute p{
+      margin:0;
+      font:clamp(21px, 1.9vw, 28px)/1.85 "Philosopher", serif;
+      color:var(--ivory);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .site-footer{
+      width:var(--container);
+      margin:0 auto 24px;
+      padding:22px 16px 28px;
+      text-align:center;
+      color:#cde0ff;
+      font:18px/1.2 serif;
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .site-footer img{
+      width:56px;
+      height:auto;
+      margin-left:8px;
+      vertical-align:middle;
+    }
+
+    @media (max-width: 1180px){
+      .desktop-center img{width:180px}
+      .desktop-title{font-size:24px}
+      .desktop-links a{font-size:14px;padding:0 14px}
+    }
+
+    @media (max-width: 980px){
+      .desktop-shell-inner{
+        grid-template-columns:auto 1fr auto;
+      }
+      .desktop-center img{width:160px}
+      .desktop-links{gap:10px}
+      .desktop-links a{padding:0 13px}
+      .content-panel,
+      .content-panel.reverse{
+        grid-template-columns:1fr;
+        gap:22px;
+      }
+      .content-panel.reverse .content-media,
+      .content-panel.reverse .content-copy{order:initial}
+    }
+
+    @media (max-width: 1040px){
+      .desktop-center{
+        min-width: 80px;
+      }
+      .desktop-center img{
+        width: 130px;
+      }
+    }
+
+    @media(max-width: 875px){
+      .desktop-center{
+        display:none;
+      }
+      .desktop-links{
+        width: 400px;
+      }
+     }
+
+    @media (max-width: 767px){
+      .desktop-shell{display:none}
+      .mobile-header{display:block}
+      .hero{padding:34px 0 56px}
+      .hero-card{padding:34px 24px 30px}
+    }
+
+    @media (max-width: 600px){
+      :root{
+        --container:calc(100% - 28px);
+        --content:calc(100% - 28px);
+      }
+
+      .hero-card{
+        border-radius:24px;
+        padding:28px 18px 24px;
+      }
+      .hero-title{font-size:clamp(42px, 12vw, 64px)}
+      .hero-subtitle{font-size:clamp(18px, 5vw, 25px)}
+      .hero-summary{font-size:clamp(19px, 5vw, 26px)}
+      .hero-btn{width:100%}
+      .content-section,.tribute{border-radius:24px}
+      .content-panel{padding:14px}
+      .content-media img{height:240px}
+    }
+  
+    .gallery-main{
+      width:var(--content);
+      margin:0 auto 120px;
+      display:grid;
+      gap:28px;
+    }
+
+    .gallery-hero-card{
+      padding:48px 42px 42px;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:var(--radius-xl);
+      background:linear-gradient(180deg, rgba(6,38,108,.90), rgba(2,11,38,.94));
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .gallery-kicker{
+      margin:0 0 16px;
+      font:13px/1 "Electrolize", sans-serif;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .gallery-title{
+      margin:0;
+      font:700 clamp(46px, 6vw, 74px)/1.02 "Philosopher", serif;
+      color:var(--gold-soft);
+      text-shadow:2px 2px 0 #000;
+    }
+
+    .gallery-summary{
+      margin:18px auto 0;
+      max-width:760px;
+      font:clamp(20px, 1.8vw, 28px)/1.7 "Philosopher", serif;
+      color:var(--ivory);
+      text-shadow:1px 1px 1px #000;
+    }
+
+    .gallery-section{
+      padding:16px;
+      border-radius:var(--radius-xl);
+      border:1px solid rgba(214,178,94,.34);
+      background:linear-gradient(180deg, rgba(5,35,96,.88), rgba(2,10,34,.93));
+      box-shadow:var(--shadow);
+    }
+
+    .gallery-wall{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:18px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      padding:12px;
+      border-radius:var(--radius-lg);
+      border:1px solid rgba(214,178,94,.45);
+      background:linear-gradient(180deg, rgba(4,28,89,.92), rgba(0,8,33,.96));
+      box-shadow:0 12px 28px rgba(0,0,0,.24);
+      transition:.22s ease;
+    }
+
+    .gallery-item:hover,
+    .gallery-item:focus-visible{
+      outline:none;
+      transform:translateY(-2px);
+    }
+
+    .gallery-item img{
+      display:block;
+      width:100%;
+      height:280px;
+      object-fit:cover;
+      border-radius:18px;
+      border:4px double rgba(255,255,255,.42);
+      box-shadow:0 12px 28px rgba(0,0,0,.30);
+    }
+
+    .gallery-media-card{
+      padding:16px;
+      border-radius:var(--radius-xl);
+      border:1px solid rgba(214,178,94,.34);
+      background:linear-gradient(180deg, rgba(5,35,96,.88), rgba(2,10,34,.93));
+      box-shadow:var(--shadow);
+    }
+
+    .gallery-video-wrap{
+      padding:12px;
+      border-radius:var(--radius-lg);
+      border:1px solid rgba(214,178,94,.45);
+      background:linear-gradient(180deg, rgba(4,28,89,.92), rgba(0,8,33,.96));
+      display:flex;
+      justify-content:center;
+    }
+
+    .gallery-video-wrap video{
+      width:min(100%, 760px);
+      border:5px double gold;
+      border-radius:15px;
+      display:block;
+    }
+
+    @media (max-width: 980px){
+      .gallery-wall{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 767px){
+      .gallery-hero-card{
+        padding:34px 24px 30px;
+      }
+      .gallery-wall{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 600px){
+      .gallery-hero-card,
+      .gallery-section,
+      .gallery-media-card{
+        border-radius:24px;
+      }
+      .gallery-hero-card{
+        padding:28px 18px 24px;
+      }
+      .gallery-title{
+        font-size:clamp(40px, 12vw, 60px);
+      }
+      .gallery-summary{
+        font-size:19px;
+      }
+      .gallery-item img{
+        height:240px;
+      }
+    }
+
+  
+    .gallery-modal{
+      display:none;
+      position:fixed;
+      inset:0;
+      z-index:1400;
+      background:rgba(2,8,22,.82);
+      backdrop-filter:blur(6px);
+      -webkit-backdrop-filter:blur(6px);
+      padding:24px;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .gallery-modal.open{
+      display:flex;
+    }
+
+    .gallery-modal-inner{
+      position:relative;
+      width:min(1100px, 100%);
+      max-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .gallery-modal-image{
+      display:block;
+      max-width:100%;
+      max-height:calc(100vh - 80px);
+      width:auto;
+      height:auto;
+      border:5px double rgba(255,255,255,.42);
+      border-radius:18px;
+      box-shadow:0 18px 36px rgba(0,0,0,.34);
+      background:rgba(4,14,34,.9);
+    }
+
+    .gallery-modal-close{
+      position:absolute;
+      top:-10px;
+      right:-10px;
+      width:44px;
+      height:44px;
+      border:1px solid rgba(214,178,94,.52);
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(12,34,88,.96), rgba(5,16,40,.98));
+      color:var(--gold-soft);
+      font:24px/1 sans-serif;
+      cursor:pointer;
+      box-shadow:0 10px 22px rgba(0,0,0,.20);
+    }
+
+    @media (max-width: 600px){
+      .gallery-modal{
+        padding:14px;
+      }
+      .gallery-modal-close{
+        top:-6px;
+        right:-2px;
+      }
+
+      .mobile-brand-subtitle{
+        font-size:14px;
+      }
+    }
+
+  
+    .desktop-brand .brand-mark,
+    .mobile-brand .brand-mark{
+      background:transparent !important;
+      border:none !important;
+      box-shadow:none !important;
+      overflow:visible !important;
+      border-radius:0 !important;
+    }
+
+    .desktop-brand .brand-mark img,
+    .mobile-brand .brand-mark img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      border:none !important;
+      box-shadow:none !important;
+      background:transparent !important;
+      border-radius:0 !important;
+      display:block !important;
+    }
+
+
+  </style>
 </head>
-
-<body style="background: linear-gradient(to right, #003, #007, #003);"  id="animated-example" class="animated fadeOut">
-    <div id="preloader">Loading</div>
-    
-    <div id="site">
-
-    <script>
-        window.addEventListener("beforeunload", function() {
-            document.body.classList.add("animate-out");
-        });
-    </script>
-
-
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#10754;</a>
-        <a class="sidelink" href="index.html">Home</a>
-        <a style="text-decoration: underline; text-underline-position: under;" class="sidelink" href="gallery.html">Gallery</a>
-        <a class="sidelink" href="obituary.html">Obituary</a>
-        <a class="sidelink" href="contact.html">Contact</a>
+<body>
+  <div id="mySidenav" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-top">
+        <div class="mobile-menu-brand">
+          <div class="brand-mark"><img src="Dad.png" alt="Tony Battaglia portrait logo"></div>
+          <div>
+            <p class="mobile-menu-brand-title">Anthony Paul Battaglia</p>
+            <p class="mobile-menu-brand-subtitle">Lieutenant Commander, U.S. Navy</p>
+          </div>
+        </div>
+        <button class="mobile-close" type="button" onclick="closeNav()" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="mobile-menu-links" aria-label="Mobile menu">
+        <a href="index.html">Home</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="obituary.html">Obituary</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "200px";
-        }
+  <div class="site-shell">
+    <header class="desktop-shell">
+      <div class="desktop-shell-inner">
+        <a class="desktop-brand" href="index.html" aria-label="Tony Battaglia memorial home">
+          <div class="brand-mark"><img src="DadRound.png" alt="Tony Battaglia portrait logo"></div>
+          <div class="desktop-brand-copy">
+            <p class="desktop-eyebrow">Memorial Page</p>
+            <p class="desktop-title">Anthony Paul Battaglia</p>
+            <p class="desktop-subtitle">Lieutenant Commander, U.S. Navy</p>
+          </div>
+        </a>
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-        
-    <nav style="background: linear-gradient(to top, #016, #027, #04c, #027, #016); background-size: 100% 100%;">
-
-        <div data-aos-delay="800" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
-            <a href="index.html"><img class="logoburger" src="Dad.png"></a>
+        <div class="desktop-center" aria-hidden="true">
+          <img src="NAVYSEA.png" alt="">
         </div>
 
-        <div data-aos-delay="600" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" class="logo"><img src="NAVYSEA.png"></div>
-        
-        <div data-aos-delay="500" class="burger" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" >
-            <div data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"  onclick="openNav()"> <span id="top"></span> <span id="middle"></span> <span id="bottom"></span></div> 
-        </div>
-        
-        <ul class="desknav">
-            
-            <li data-aos-delay="400" data-aos="fade-left" data-aos-duration="1200" ><a href="contact.html">Contact</a></li>
-            
-            <li data-aos-delay="400" data-aos="fade-left" data-aos-duration="1200" ><a href="obituary.html">Obituary</a></li>
-            
-            <li id="gallerypage" data-aos-delay="700" data-aos="fade-left" data-aos-duration="1200" ><a style="text-decoration: underline; text-underline-position: under;" href="gallery.html">Gallery</a></li>
-            
-            <li data-aos-delay="1000" data-aos="fade-left" data-aos-duration="1200" ><a href="index.html">Home</a></li>
-        
-        </ul>
+        <nav class="desktop-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="active" href="gallery.html">Gallery</a>
+          <a href="obituary.html">Obituary</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-    </nav>
-    
-        
-    <div data-aos-delay="100" data-aos="zoom-in-up" data-aos-duration="1200" class="banner">
-        
-        <img src="Banner.png">
-        
-    </div>
-        
-    <div class="gallery">
-    
-        <a href="DadFunnyUniform.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadFunnyUniform.jpg"></a>
-        
-        <a href="DadItalia.JPG"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadItalia.JPG"></a>
-        
-        <a href="DadMia.JPG"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadMia.JPG"></a>
-        
-        <a href="Garden.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Garden.jpg"></a>
-        
-        <a href="RunningInUniform.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="RunningInUniform.jpg"></a>
-        
-        <a href="DadRestaurant.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadRestaurant.jpg"></a>
-        
-        <a href="Sunset.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Sunset.jpg"></a>
-        
-        <a href="Catch.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Catch.jpg"></a>
-        
-        <a href="Volunteer.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Volunteer.jpg"></a>
-        
-        <a href="DadDeli.png"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadDeli.png"></a>
-        
-        <a href="DadVA.png"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadVA.png"></a>
-        
-        <a href="DadPapa.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadPapa.jpg"></a>
-        
-        <a href="DadPup.JPG"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadPup.JPG"></a>
-        
-        <a href="DadPie.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadPie.jpg"></a>
-        
-        <a href="DadPark.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadPark.jpg"></a>
-        
-        <a href="Pilot.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Pilot.jpg"></a>
-        
-        <a href="DadYoung.png"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadYoung.png"></a>
-        
-        <a href="Uniform.png"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Uniform.png"></a>
-        
-        <a href="Battleship.jpg"><img id="battleship" data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Battleship.jpg"></a>
-        
-    </div>
-        
-        <div data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" class="banner">
-        
-            <img style="border:none;" src="BannerFam.png"><br><br>
-        
-        </div>
-        
-        
-    <div class="gallery">
+    <header class="mobile-header">
+      <div class="mobile-topbar">
+        <div></div>
+        <button class="mobile-toggle" type="button" onclick="openNav()" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
-        
-        <a href="Ancestors.png"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Ancestors.png"></a>
-    
-        <a href="Nonna.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Nonna.jpg"></a>
-        
-        <a href="Bita.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Bita.jpg"></a>
-        
-        <a href="DadVovo.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadVovo.jpg"></a>
-        
-        <a href="DadBabies.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadBabies.jpg"></a>
-        
-        <a href="LisaFam.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="LisaFam.jpg"></a>
-        
-        <a href="BatagliaFellas.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="BatagliaFellas.jpg"></a>
-        
-        <a href="MiaYoung.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="MiaYoung.jpg"></a>
-        
-        <a href="NonnaMia.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="NonnaMia.jpg"></a>
-        
-        <a href="AntJP.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="AntJP.jpg"></a>
-        
-        <a href="MiaLana.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="MiaLana.jpg"></a>
-        
-        <a href="BitaElla.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="BitaElla.jpg"></a>
-        
-        <a href="PappaMia.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="PappaMia.jpg"></a>
-        
-        <a href="NonnaMia2.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="NonnaMia2.jpg"></a>
-        
-        <a href="NinoMia.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="NinoMia.jpg"></a>
-        
-        <a href="BitaMia2.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="BitaMia2.jpg"></a>
-        
-        <a href="DadBitaBaby.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="DadBitaBaby.jpg"></a>
-        
-        <a href="JPMiaNino.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="JPMiaNino.jpg"></a>
-        
-        <a href="LanaPink.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="LanaPink.jpg"></a>
-        
-        <a href="TatAnt.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="TatAnt.jpg"></a>
-        
-        <a href="TatElla.jpg"><img data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="TatElla.jpg"></a>
-        
-        <a href="Lenola.jpg"><img id="lenola" data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" src="Lenola.jpg"></a>
-        
-    </div>
-        
-        <center data-aos-delay="200" data-aos="zoom-in-up" data-aos-duration="1200" >
-        
-            <video controls id="EllaVideo" style="border: 5px double gold; border-radius: 15px;">
-        
-            <source src="EllaDance.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        
+      <a class="mobile-brand" href="index.html" aria-label="Tony Battaglia memorial home">
+        <div class="brand-mark"><img src="DadRound.png" alt="Tony Battaglia portrait logo"></div>
+        <div class="mobile-brand-copy">
+          <p class="mobile-brand-title">Anthony Paul Battaglia</p>
+          <p class="mobile-brand-subtitle">Lieutenant Commander, U.S. Navy</p>
+        </div>
+      </a><br>
+    </header>
+
+    <main>
+      <section class="gallery-main">
+        <div class="gallery-hero-card">
+          <p class="gallery-kicker">Photographs & Remembrance</p>
+          <h1 class="gallery-title">Gallery</h1>
+          <p class="gallery-summary">
+            A collection of images honoring Anthony Paul Battaglia and preserving moments from his life, service, and family legacy.
+          </p>
+        </div>
+
+        <div class="gallery-section">
+          <div class="gallery-wall">
+            <a class="gallery-item" href="#" data-full="Dad.png">
+              <img src="Dad.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadFunnyUniform.jpg">
+              <img src="DadFunnyUniform.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadItalia.JPG">
+              <img src="DadItalia.JPG" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadMia.JPG">
+              <img src="DadMia.JPG" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Garden.jpg">
+              <img src="Garden.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="RunningInUniform.jpg">
+              <img src="RunningInUniform.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadRestaurant.jpg">
+              <img src="DadRestaurant.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Sunset.jpg">
+              <img src="Sunset.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Catch.jpg">
+              <img src="Catch.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Volunteer.jpg">
+              <img src="Volunteer.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadDeli.png">
+              <img src="DadDeli.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadVA.png">
+              <img src="DadVA.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadPapa.jpg">
+              <img src="DadPapa.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadPup.JPG">
+              <img src="DadPup.JPG" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadPie.jpg">
+              <img src="DadPie.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadPark.jpg">
+              <img src="DadPark.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Pilot.jpg">
+              <img src="Pilot.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadYoung.png">
+              <img src="DadYoung.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Uniform.png">
+              <img src="Uniform.png" alt="Gallery image">
+            </a>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <div class="hero-card" style="margin-bottom:18px;padding:26px 24px 22px;">
+            <p class="hero-kicker">Family</p>
+            <p class="hero-summary" style="max-width:none;">Family photographs and shared memories.</p>
+          </div>
+          <div class="gallery-wall">
+            <a class="gallery-item" href="#" data-full="Battleship.jpg">
+              <img src="Battleship.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Ancestors.png">
+              <img src="Ancestors.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Nonna.jpg">
+              <img src="Nonna.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Bita.jpg">
+              <img src="Bita.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadVovo.jpg">
+              <img src="DadVovo.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadBabies.jpg">
+              <img src="DadBabies.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="LisaFam.jpg">
+              <img src="LisaFam.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="BatagliaFellas.jpg">
+              <img src="BatagliaFellas.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="MiaYoung.jpg">
+              <img src="MiaYoung.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="NonnaMia.jpg">
+              <img src="NonnaMia.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="AntJP.jpg">
+              <img src="AntJP.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="MiaLana.jpg">
+              <img src="MiaLana.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="BitaElla.jpg">
+              <img src="BitaElla.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="PappaMia.jpg">
+              <img src="PappaMia.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="NonnaMia2.jpg">
+              <img src="NonnaMia2.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="NinoMia.jpg">
+              <img src="NinoMia.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="BitaMia2.jpg">
+              <img src="BitaMia2.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadBitaBaby.jpg">
+              <img src="DadBitaBaby.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="JPMiaNino.jpg">
+              <img src="JPMiaNino.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="LanaPink.jpg">
+              <img src="LanaPink.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="TatAnt.jpg">
+              <img src="TatAnt.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="TatElla.jpg">
+              <img src="TatElla.jpg" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="Lenola.jpg">
+              <img src="Lenola.jpg" alt="Gallery image">
+            </a>
+          </div>
+        </div>
+        <div class="gallery-media-card">
+          <div class="gallery-video-wrap">
+            <video controls>
+              <source src="EllaDance.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
             </video>
-        
-        </center> 
-    
-    
+          </div>
+        </div>
 
-    
-    <div id="footer" style="margin-top: -80px;">
-        <p>&copy; Battaglias <img id="menumade" src="MENUDad.png"> made 2025</p>
+        <div class="tribute">
+          <h2>In Memory</h2>
+          <p>
+            These images are shared in remembrance of Anthony Paul Battaglia and the life he lived in service, family, and honor.
+          </p>
+        </div>
+      </section>
+    </main>
+
+
+    <div id="galleryModal" class="gallery-modal" aria-hidden="true">
+      <div class="gallery-modal-inner">
+        <button class="gallery-modal-close" type="button" aria-label="Close image">&times;</button>
+        <img id="galleryModalImage" class="gallery-modal-image" src="" alt="">
+      </div>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-        
-        <script>
-        
-        var loader = document.getElementById("preloader");
-        
-        window.addEventListener("load", function(){loader.style.display = "none"})
-        
-    </script>
-        
-        </div>
-    </body>
+    <footer class="site-footer">
+      <p>&copy; Battaglias <img src="MENUDad.png" alt="Family mark"> made 2025</p>
+    </footer>
+  </div>
+
+  <script>
+    function openNav() {
+      const menu = document.getElementById('mySidenav');
+      menu.classList.add('open');
+      menu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+      const menu = document.getElementById('mySidenav');
+      menu.classList.remove('open');
+      menu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    const galleryModal = document.getElementById('galleryModal');
+    const galleryModalImage = document.getElementById('galleryModalImage');
+    const galleryModalClose = document.querySelector('.gallery-modal-close');
+
+    function openGalleryModal(src) {
+      galleryModalImage.src = src;
+      galleryModal.classList.add('open');
+      galleryModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeGalleryModal() {
+      galleryModal.classList.remove('open');
+      galleryModal.setAttribute('aria-hidden', 'true');
+      galleryModalImage.removeAttribute('src');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.gallery-item').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const src = link.getAttribute('data-full') || (link.querySelector('img') ? link.querySelector('img').getAttribute('src') : '');
+        if (!src) return;
+        openGalleryModal(src);
+      });
+    });
+
+    galleryModal.addEventListener('click', function(e) {
+      if (e.target === galleryModal) closeGalleryModal();
+    });
+
+    galleryModalClose.addEventListener('click', function() {
+      closeGalleryModal();
+    });
+
+    document.getElementById('mySidenav').addEventListener('click', function(e){
+      if (e.target === this) closeNav();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape') {
+        closeNav();
+        closeGalleryModal();
+      }
+    });
+  </script>
+</body>
 </html>
