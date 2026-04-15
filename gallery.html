@@ -747,6 +747,10 @@
       .gallery-wall{
         grid-template-columns:repeat(2, minmax(0, 1fr));
       }
+
+      .gallery-item img{
+        height: 450px;
+      }
     }
 
     @media (max-width: 767px){
@@ -755,6 +759,9 @@
       }
       .gallery-wall{
         grid-template-columns:1fr;
+      }
+      .gallery-item img{
+        height: 850px;
       }
     }
 
@@ -774,7 +781,7 @@
         font-size:19px;
       }
       .gallery-item img{
-        height:240px;
+        height: 450px;
       }
     }
 
@@ -843,6 +850,10 @@
 
       .mobile-brand-subtitle{
         font-size:14px;
+      }
+
+      .gallery-item img{
+        height: 450px;
       }
     }
 
@@ -1009,7 +1020,7 @@
 
         <div class="gallery-section">
           <div class="hero-card" style="margin-bottom:18px;padding:26px 24px 22px;">
-            <p class="hero-kicker">Family</p>
+            <p style="font-size:40px;" class="gallery-title">Family</p>
             <p class="hero-summary" style="max-width:none;">Family photographs and shared memories.</p>
           </div>
           <div class="gallery-wall">
