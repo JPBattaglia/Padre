@@ -647,6 +647,10 @@
         --content:calc(100% - 28px);
       }
 
+      .mobile-brand-subtitle{
+        font-size:14px;
+      }
+
       .hero-card{
         border-radius:24px;
         padding:28px 18px 24px;
@@ -659,6 +663,28 @@
       .content-panel{padding:14px}
       .content-media img{height:240px}
     }
+  
+    .desktop-brand .brand-mark,
+    .mobile-brand .brand-mark{
+      background:transparent !important;
+      border:none !important;
+      box-shadow:none !important;
+      overflow:visible !important;
+      border-radius:0 !important;
+    }
+
+    .desktop-brand .brand-mark img,
+    .mobile-brand .brand-mark img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      border:none !important;
+      box-shadow:none !important;
+      background:transparent !important;
+      border-radius:0 !important;
+      display:block !important;
+    }
+
   </style>
 </head>
 <body>
@@ -687,7 +713,7 @@
     <header class="desktop-shell">
       <div class="desktop-shell-inner">
         <a class="desktop-brand" href="index.html" aria-label="Tony Battaglia memorial home">
-          <div class="brand-mark"><img src="Dad.png" alt="Tony Battaglia portrait logo"></div>
+          <div class="brand-mark"><img src="DadRound.png" alt="Tony Battaglia portrait logo"></div>
           <div class="desktop-brand-copy">
             <p class="desktop-eyebrow">Memorial Page</p>
             <p class="desktop-title">Anthony Paul Battaglia</p>
@@ -717,7 +743,7 @@
       </div>
 
       <a class="mobile-brand" href="index.html" aria-label="Tony Battaglia memorial home">
-        <div class="brand-mark"><img src="Dad.png" alt="Tony Battaglia portrait logo"></div>
+        <div class="brand-mark"><img src="DadRound.png" alt="Tony Battaglia portrait logo"></div>
         <div class="mobile-brand-copy">
           <p class="mobile-brand-title">Anthony Paul Battaglia</p>
           <p class="mobile-brand-subtitle">Lieutenant Commander, U.S. Navy</p>
