@@ -178,11 +178,11 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      min-height:40px;
-      padding:0 18px;
+      min-height:35px;
+      padding: 0px 18px;
       border-radius:999px;
-      border:1px solid rgba(225, 182, 97, 0.736);
-      background:rgba(10,22,56,.55);
+      border:transparent 1px solid;
+      background:transparent;
       text-decoration:none;
       color:var(--gold-soft);
       font:15px/1 "Federant", serif;
@@ -197,9 +197,10 @@
     .desktop-links a:focus-visible{
       outline:none;
       transform:translateY(-1px);
-      background:rgb(13, 0, 162);
+      background:transparent;
       color:#ffff00;
-      border: 1px solid rgb(255, 230, 0);
+      font-weight:bolder;
+      border-color:rgb(255, 230, 0);
     }
 
     .desktop-links a.active{

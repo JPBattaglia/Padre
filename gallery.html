@@ -174,10 +174,10 @@
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      min-height:40px;
+      min-height:35px;
       padding:0 18px;
       border-radius:999px;
-      border:1px solid rgba(225, 182, 97, 0.736);
+      border:1px solid transparent;
       background:rgba(10,22,56,.55);
       text-decoration:none;
       color:var(--gold-soft);
@@ -193,7 +193,7 @@
     .desktop-links a:focus-visible{
       outline:none;
       transform:translateY(-1px);
-      background:rgb(13, 0, 162);
+      background:transparent;
       color:#ffff00;
       border: 1px solid rgb(255, 230, 0);
     }
@@ -1169,8 +1169,14 @@
 
         <div class="gallery-section">
           <div class="gallery-wall">
+            <a class="gallery-item" href="#" data-full="UniformWhite.png">
+              <img src="UniformWhite.png" alt="Gallery image">
+            </a>
             <a class="gallery-item" href="#" data-full="Dad.png">
               <img src="Dad.png" alt="Gallery image">
+            </a>
+            <a class="gallery-item" href="#" data-full="DadWhiteUniform.jpg">
+              <img src="DadWhiteUniform.jpg" alt="Gallery image">
             </a>
             <a class="gallery-item" href="#" data-full="DadFunnyUniform.jpg">
               <img src="DadFunnyUniform.jpg" alt="Gallery image">
@@ -1222,9 +1228,6 @@
             </a>
             <a class="gallery-item" href="#" data-full="DadYoung.png">
               <img src="DadYoung.png" alt="Gallery image">
-            </a>
-            <a class="gallery-item" href="#" data-full="Uniform.png">
-              <img src="Uniform.png" alt="Gallery image">
             </a>
           </div>
         </div>
