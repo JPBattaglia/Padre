@@ -1026,6 +1026,237 @@
       display:block !important;
     }
 
+
+    /* =======================================
+       FROM HIS SHIPMATES
+    ======================================= */
+    .shipmates{
+      width:90%;
+      max-width:var(--content);
+      margin:-62px auto 110px;
+    }
+
+    .shipmates-heading{
+      text-align:center;
+      margin:0 0 24px;
+    }
+
+    .shipmates-heading .kicker{
+      margin:0 0 8px;
+      font:12px/1.2 "Electrolize",sans-serif;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      color:var(--blue);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .shipmates-heading h2{
+      margin:0;
+      font:700 clamp(36px,4vw,50px)/1.08 "Philosopher",serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .shipmates-heading .line{
+      width:150px;
+      height:1px;
+      margin:16px auto 0;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+    }
+
+    .shipmate-card{
+      position:relative;
+      overflow:hidden;
+      border:1px solid var(--line-strong);
+      border-radius:var(--radius-xl);
+      background:
+        radial-gradient(circle at 50% 0,rgba(25,70,130,.18),transparent 44%),
+        linear-gradient(180deg,rgba(5,28,70,.97),rgba(1,11,31,.99));
+      box-shadow:var(--shadow);
+    }
+
+    .shipmate-card::before{
+      content:"";
+      position:absolute;
+      inset:9px;
+      border:1px solid rgba(214,178,94,.20);
+      border-radius:24px;
+      pointer-events:none;
+    }
+
+    .shipmate-card-inner{
+      position:relative;
+      z-index:1;
+      padding:38px 42px 34px;
+    }
+
+    .shipmate-card-top{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 330px minmax(0,1fr);
+      align-items:center;
+      gap:28px;
+      margin-bottom:28px;
+    }
+
+    .shipmate-identity{
+      min-width:0;
+    }
+
+    .shipmate-name{
+      margin:0;
+      font:700 clamp(28px,3vw,40px)/1.08 "Philosopher",serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .shipmate-rank{
+      margin:8px 0 0;
+      font:12px/1.45 "Electrolize",sans-serif;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--blue);
+    }
+
+    .shipmate-identity-line{
+      width:170px;
+      height:1px;
+      margin-top:14px;
+      background:linear-gradient(90deg,var(--gold),transparent);
+    }
+
+    .shipmate-ship-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-width:0;
+    }
+
+    .shipmate-ship{
+      display:block;
+      width:200px;
+      max-width:100%;
+      height:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 18px 22px rgba(0,0,0,.52));
+    }
+
+    .shipmate-service{
+      justify-self:end;
+      text-align:right;
+    }
+
+    .shipmate-service .label{
+      display:block;
+      margin-bottom:5px;
+      font:10px/1.3 "Electrolize",sans-serif;
+      letter-spacing:.20em;
+      text-transform:uppercase;
+      color:var(--blue);
+    }
+
+    .shipmate-service .ship{
+      display:block;
+      font:700 24px/1.1 "Federant",serif;
+      color:var(--gold-soft);
+    }
+
+    .shipmate-service .hull{
+      display:block;
+      margin-top:4px;
+      font:12px/1.3 "Electrolize",sans-serif;
+      letter-spacing:.16em;
+      color:var(--gold);
+    }
+
+    .shipmate-divider{
+      height:1px;
+      margin:0 0 28px;
+      background:linear-gradient(90deg,transparent,rgba(214,178,94,.62) 12%,rgba(214,178,94,.62) 88%,transparent);
+    }
+
+    .shipmate-message{
+      max-width:980px;
+      margin:0 auto;
+      font:19px/1.62 "Philosopher",serif;
+      color:var(--ivory);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .shipmate-message p{
+      margin:0 0 17px;
+    }
+
+    .shipmate-message p:last-child{
+      margin-bottom:0;
+    }
+
+    .shipmate-farewell{
+      max-width:800px;
+      margin:30px auto 0;
+      padding:21px 28px 19px;
+      border-top:1px solid rgba(214,178,94,.68);
+      border-bottom:1px solid rgba(214,178,94,.68);
+      text-align:center;
+      background:linear-gradient(90deg,transparent,rgba(5,25,60,.62) 14%,rgba(5,25,60,.62) 86%,transparent);
+    }
+
+    .shipmate-farewell .quote{
+      margin:0;
+      font:italic 21px/1.5 "Federant",serif;
+      color:var(--gold-soft);
+      text-shadow:1px 1px 0 #000;
+    }
+
+    .shipmate-farewell .final{
+      margin:9px 0 0;
+      font:10px/1.4 "Electrolize",sans-serif;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--blue);
+    }
+
+    .shipmate-signature{
+      margin:22px 0 0;
+      text-align:center;
+      font:italic 19px/1.35 "Philosopher",serif;
+      color:var(--gold-soft);
+    }
+
+    @media(max-width:900px){
+      .shipmate-card-inner{padding:32px 30px 30px}
+      .shipmate-card-top{
+        grid-template-columns:1fr;
+        gap:18px;
+        text-align:center;
+      }
+      .shipmate-ship-wrap{order:-1}
+      .shipmate-ship{width:min(150px,60vw)}
+      .shipmate-service{justify-self:center;text-align:center}
+      .shipmate-identity-line{margin:14px auto 0}
+    }
+
+    @media(max-width:600px){
+      .shipmates{
+        width:calc(100% - 24px);
+        margin:-68px auto 88px;
+      }
+      .shipmates-heading{margin-bottom:20px}
+      .shipmates-heading h2{font-size:34px}
+      .shipmate-card{border-radius:24px}
+      .shipmate-card::before{inset:7px;border-radius:18px}
+      .shipmate-card-inner{padding:25px 20px 24px}
+      .shipmate-card-top{margin-bottom:22px}
+      .shipmate-ship{width:min(px,72vw)}
+      .shipmate-name{font-size:30px}
+      .shipmate-rank{font-size:10px}
+      .shipmate-service .ship{font-size:21px}
+      .shipmate-divider{margin-bottom:22px}
+      .shipmate-message{font-size:17px;line-height:1.58}
+      .shipmate-farewell{margin-top:25px;padding:17px 12px 15px}
+      .shipmate-farewell .quote{font-size:18px}
+      .shipmate-signature{font-size:17px}
+    }
+
   </style>
 </head>
 <body>
@@ -1145,6 +1376,54 @@
           </div>
         </div>
       </section>
+
+      <section class="shipmates" aria-labelledby="shipmates-title">
+        <div class="shipmates-heading">
+          <p class="kicker">In Their Own Words</p>
+          <h2 id="shipmates-title">From His Shipmates</h2>
+          <div class="line" aria-hidden="true"></div>
+        </div>
+
+        <article class="shipmate-card">
+          <div class="shipmate-card-inner">
+            <div class="shipmate-card-top">
+              <div class="shipmate-identity">
+                <h3 class="shipmate-name">Martin “Marty” Palmiere</h3>
+                <p class="shipmate-rank">EMC(SW), USN (Ret.)</p>
+                <div class="shipmate-identity-line" aria-hidden="true"></div>
+              </div>
+
+              <div class="shipmate-ship-wrap">
+                <img class="shipmate-ship" src="USS-Iowa-Cutout.png" alt="USS Iowa BB-61">
+              </div>
+
+              <div class="shipmate-service">
+                <span class="label">Served aboard</span>
+                <span class="ship">USS IOWA</span>
+                <span class="hull">BB-61</span>
+              </div>
+            </div>
+
+            <div class="shipmate-divider" aria-hidden="true"></div>
+
+            <div class="shipmate-message">
+              <p>To the extended Famiglia of Tony “B” or as we all referred to him on the IOWA...Mr. B., my most heartfelt condolences on the loss of “the Boss”... He took this young sailor from Pittsburgh with Italian roots under his wing and taught me not only how to be a leader, but also greatly improving my linguistic skills with the Italian language, specifically that spoken in Southern Italy......all started when he addressed me as “guaglione” and all he got back was a “deer in the headlights” look...</p>
+
+              <p>My 'O Bisnonn arrived here in 1888, my future Bisnonna arrived in 1898, they were married in 1902 and one of their rules besides changing the spelling of the last letter in the last name from "i" to "e" was that Italian would not be taught to the coming generations as we were "American" now.</p>
+
+              <p>Your Dad helped my recover a lot of my roots in addition to showing me what it was to be in a leadership role, for that, I'm forever grateful as it helped my career immensely.</p>
+            </div>
+
+            <div class="shipmate-farewell">
+              <p class="quote">“Rest easy Sailor, ship your oars, your watch is over, your shipmates have the watch.”</p>
+              <p class="final">Fair Winds &amp; Following Seas Mr. “B”.</p>
+            </div>
+
+            <p class="shipmate-signature">— Marty Palmiere</p>
+          </div>
+        </article>
+      </section>
+
     </main>
 
     <footer class="site-footer">
