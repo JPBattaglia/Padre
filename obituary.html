@@ -1257,6 +1257,124 @@
       .shipmate-signature{font-size:17px}
     }
 
+
+    /* =======================================
+       Mobile obituary reader modal
+    ======================================= */
+    .obit-tap-hint,
+    .obit-modal{
+      display:none;
+    }
+
+    @media (max-width: 849px){
+      .obit-copy{
+        display:none !important;
+      }
+
+      #obitParchment{
+        cursor:pointer;
+      }
+
+      .obit-tap-hint{
+        display:block;
+        margin:-4px 0 0;
+        text-align:center;
+        font:11px/1.3 "Electrolize", sans-serif;
+        letter-spacing:.16em;
+        text-transform:uppercase;
+        color:var(--gold);
+        text-shadow:1px 1px 0 #000;
+      }
+
+      .obit-modal{
+        position:fixed;
+        inset:0;
+        z-index:3000;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:18px;
+        background:rgba(1,6,18,.82);
+        backdrop-filter:blur(8px);
+        -webkit-backdrop-filter:blur(8px);
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+        transition:opacity .25s ease, visibility 0s linear .25s;
+      }
+
+      .obit-modal.open{
+        opacity:1;
+        visibility:visible;
+        pointer-events:auto;
+        transition:opacity .25s ease, visibility 0s linear 0s;
+      }
+
+      .obit-modal-card{
+        position:relative;
+        width:min(720px, 100%);
+        max-height:calc(100svh - 36px);
+        overflow-y:auto;
+        -webkit-overflow-scrolling:touch;
+        padding:34px 24px 28px;
+        border:1px solid rgba(225,182,97,.78);
+        border-radius:24px;
+        background:linear-gradient(180deg, rgba(5,35,96,.985), rgba(2,10,34,.995));
+        box-shadow:0 28px 70px rgba(0,0,0,.55);
+      }
+
+      .obit-modal-card::before{
+        content:"";
+        position:absolute;
+        inset:8px;
+        border:1px solid rgba(214,178,94,.22);
+        border-radius:17px;
+        pointer-events:none;
+      }
+
+      .obit-modal-close{
+        position:sticky;
+        top:0;
+        z-index:2;
+        margin-left:auto;
+        width:35px;
+        height:35px;
+        border:1.5px solid rgb(225, 182, 97);
+        border-radius:50%;
+        background:darkred;
+        color:var(--gold-soft);
+        font:30px/1 "Philosopher", serif;
+        cursor:pointer;
+        display:grid;
+        place-items:center;
+        box-shadow:0 8px 20px rgba(0,0,0,.35);
+      }
+
+      .obit-modal-close:focus-visible{
+        outline:2px solid var(--gold-soft);
+        outline-offset:3px;
+      }
+
+      .obit-modal-title{
+        margin:-22px 54px 24px 0;
+        font:700 clamp(30px, 8vw, 42px)/1.08 "Philosopher", serif;
+        color:var(--gold-soft);
+        text-shadow:1px 1px 0 #000;
+      }
+
+      .obit-modal-copy{
+        display:grid;
+        gap:18px;
+      }
+
+      .obit-modal-copy p{
+        margin:0;
+        font:19px/1.72 "Philosopher", serif;
+        color:var(--ivory);
+        text-shadow:1px 1px 0 #000;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -1352,7 +1470,8 @@
         <div class="obit-panel">
           <div class="obit-inner">
             <div class="obit-image-wrap">
-              <img src="Obituary.png" alt="Obituary for Anthony Paul Battaglia">
+              <img id="obitParchment" src="Obituary.png" alt="Obituary for Anthony Paul Battaglia" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="obitModal">
+              <p class="obit-tap-hint">Tap obituary to read</p>
               <a class="obit-download" href="ObitDoc.pdf" download>Download</a>
               <div class="obit-ship-wrap">
                 <img src="Ship.png" alt="Navy ship illustration">
@@ -1424,6 +1543,22 @@
         </article>
       </section>
 
+
+      <div class="obit-modal" id="obitModal" role="dialog" aria-modal="true" aria-labelledby="obitModalTitle" aria-hidden="true">
+        <div class="obit-modal-card" role="document">
+          <button class="obit-modal-close" id="obitModalClose" type="button" aria-label="Close obituary">×</button>
+          <h2 class="obit-modal-title" id="obitModalTitle">Anthony Paul Battaglia</h2>
+          <div class="obit-modal-copy">
+            <p>Anthony (Tony) Paul Battaglia, born March 18, 1945, passed away on February 20, 2024, at the age of 78. A proud Navy veteran, Tony dedicated over 20 years of service to his country, retiring as Lieutenant Commander (LCDR) in 1991. His military career earned him numerous decorations, including the Third Navy Commendation Medal, Second Navy Achievement Medal, Third Good Conduct Award, Second National Defense Service Medal, Third Meritorious Unit Commendation, Third Battle 'E' Ribbon, Nine Sea Service Deployment Ribbons, Tenth Overseas Ribbon, and the Navy Expeditionary Medal.</p>
+            <p>His final duty station was in Naples, Italy, where he remained close to his Italian heritage and frequently visited his Italian family and parents, Benita Sinapi Battaglia and Russ Battaglia. The military life provided Tony and his family with opportunities for travel and adventure, a cherished aspect of their lives.</p>
+            <p>Tony is survived by his sister, Mary G. Battaglia; his daughter, Benita Weaver; and his twin sons, Nino Battaglia and Jean Pierre Battaglia. He also leaves behind two grandchildren, Mia Weaver and Anthony Imbriaco, as well as two great-grandchildren, Ella and Lana Imbriaco. Later in life, Tony remarried and had a daughter, Elizabeth Battaglia.</p>
+            <p>Following his military career, Tony worked with Cummins Inc., where he formed lasting friendships. His most meaningful contributions, however, were his dedicated hours of volunteer work at the Veterans Hospital. Tony's love for the sea extended beyond his naval career. He was an avid fisherman, spending countless peaceful hours on Lake Bradford at Little Creek Base, casting for his favorite bass. Fishing was his solace, a place where he could reflect, unwind, and enjoy nature. Tony had true love for life's simple pleasures, he loved a good cup of coffee with friends and movies with family. Born in Rome and having spent cherished years in Italy and Spain, he carried the spirit of great cuisine in his heart. He never lost his appreciation for a good meal with company of those he loved.</p>
+            <p>Tony bravely fought cancer before passing. Though life took him down different paths, his legacy as a serviceman, father, brother, and friend endures.</p>
+            <p>May he rest in peace.</p>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="site-footer">
@@ -1475,6 +1610,53 @@
     document.addEventListener('keydown', function(e){
       if (e.key === 'Escape') closeNav();
     });
+
+    const obitParchment = document.getElementById('obitParchment');
+    const obitModal = document.getElementById('obitModal');
+    const obitModalClose = document.getElementById('obitModalClose');
+
+    function openObitModal(){
+      if (!obitModal || window.innerWidth > 849) return;
+      obitModal.classList.add('open');
+      obitModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (obitModalClose) obitModalClose.focus();
+    }
+
+    function closeObitModal(){
+      if (!obitModal) return;
+      obitModal.classList.remove('open');
+      obitModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (obitParchment) obitParchment.focus();
+    }
+
+    if (obitParchment){
+      obitParchment.addEventListener('click', openObitModal);
+      obitParchment.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          openObitModal();
+        }
+      });
+    }
+
+    if (obitModalClose){
+      obitModalClose.addEventListener('click', closeObitModal);
+    }
+
+    if (obitModal){
+      obitModal.addEventListener('click', function(e){
+        if (e.target === obitModal) closeObitModal();
+      });
+    }
+
+    document.addEventListener('keydown', function(e){
+      if (e.key === 'Escape' && obitModal && obitModal.classList.contains('open')){
+        closeObitModal();
+      }
+    });
+
   </script>
 </body>
 </html>
